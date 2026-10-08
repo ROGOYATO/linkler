@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bu sayfa yalnızca QR kod ile paylaşılır; arama motorlarında görünmesin. -->
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#0f172a">
+  <title>TOBB ETÜ ROGOYATO</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230ea5e9'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3ERG%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #f1f5f9;
+      --bg-accent: #e0f2fe;
+      --card: #ffffff;
+      --card-hover: #f8fafc;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #0284c7;
+      --shadow: 0 1px 2px rgba(15, 23, 42, .06), 0 4px 16px rgba(15, 23, 42, .06);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1120;
+        --bg-accent: #0c2a43;
+        --card: #111a2e;
+        --card-hover: #17223a;
+        --text: #e2e8f0;
+        --muted: #94a3b8;
+        --border: #1e293b;
+        --accent: #38bdf8;
+        --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 4px 16px rgba(0, 0, 0, .25);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { margin: 0; }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(1200px 500px at 50% -200px, var(--bg-accent), transparent 70%),
+        var(--bg);
+      display: flex;
+      justify-content: center;
+      padding: 48px 16px 32px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      width: 100%;
+      max-width: 440px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      width: 88px;
+      height: 88px;
+      border-radius: 24px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #0ea5e9, #6366f1);
+      color: #fff;
+      box-shadow: var(--shadow);
+    }
+    .logo svg { width: 48px; height: 48px; }
+
+    h1 {
+      margin: 20px 0 4px;
+      font-size: 1.5rem;
+      letter-spacing: .02em;
+      text-align: center;
+    }
+
+    .subtitle {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: .95rem;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    a.link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      min-height: 60px;
+      border-radius: 14px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform .15s ease, background-color .15s ease, border-color .15s ease;
+    }
+    a.link:hover { background: var(--card-hover); border-color: var(--accent); transform: translateY(-1px); }
+    a.link:active { transform: translateY(0); }
+    a.link:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+    .icon {
+      flex: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+    }
+    .icon svg { width: 20px; height: 20px; }
+
+    .label { flex: 1; min-width: 0; }
+
+    .chevron { flex: none; width: 18px; height: 18px; color: var(--muted); }
+
+    .web       { background: #0ea5e9; }
+    .form      { background: #7c3aed; }
+    .instagram { background: linear-gradient(45deg, #f59e0b, #ec4899 50%, #8b5cf6); }
+    .linkedin  { background: #0a66c2; }
+    .whatsapp  { background: #22c55e; }
+
+    footer {
+      margin-top: 32px;
+      color: var(--muted);
+      font-size: .8rem;
+      text-align: center;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      a.link { transition: none; }
+      a.link:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="logo" aria-hidden="true">
+      <!-- Basit robot simgesi -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="8" width="16" height="12" rx="3"/>
+        <path d="M12 8V4"/>
+        <circle cx="12" cy="3" r="1"/>
+        <circle cx="9" cy="14" r="1.3" fill="currentColor"/>
+        <circle cx="15" cy="14" r="1.3" fill="currentColor"/>
+        <path d="M2 13v3M22 13v3"/>
+      </svg>
+    </div>
+
+    <h1>TOBB ETÜ ROGOYATO</h1>
+    <p class="subtitle">Robotik ve Gömülü Yazılım Topluluğu</p>
+
+    <ul>
+      <li>
+        <a class="link" href="https://rogoyato.com" target="_blank" rel="noopener">
+          <span class="icon web" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </span>
+          <span class="label">Web Sitesi</span>
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSeGaW8EqqJspyefzGMQ_J8Bk3fOJE2F0nsbmd-0TO27G2aiLg/viewform" target="_blank" rel="noopener">
+          <span class="icon form" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg>
+          </span>
+          <span class="label">Topluluk Üyelik Formu</span>
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://www.instagram.com/eturogoyato/" target="_blank" rel="noopener">
+          <span class="icon instagram" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+          </span>
+          <span class="label">Instagram</span>
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://www.linkedin.com/company/robotik-ve-g%C3%B6m%C3%BCl%C3%BC-yaz%C4%B1l%C4%B1m-toplulu%C4%9Fu" target="_blank" rel="noopener">
+          <span class="icon linkedin" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3v-11zm6.5 0h3.8v1.5h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4v-11z"/></svg>
+          </span>
+          <span class="label">LinkedIn</span>
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://chat.whatsapp.com/CWOfxscMxdnLtUQM8ecm1J" target="_blank" rel="noopener">
+          <span class="icon whatsapp" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></svg>
+          </span>
+          <span class="label">WhatsApp Grubuna Katıl</span>
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </li>
+    </ul>
+
+    <footer>© TOBB ETÜ Robotik ve Gömülü Yazılım Topluluğu</footer>
+  </main>
+</body>
+</html>
