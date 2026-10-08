@@ -6,7 +6,7 @@ Sayfa sitede hiçbir menü/butondan erişilebilir değildir ve arama motorların
 kapalıdır (`noindex`). Yalnızca QR kod ile paylaşılır.
 
 - Sayfa: `index.html`
-- Adres: https://ysoktar.github.io/linkler/
+- Adres: https://rogoyato.github.io/linkler/
 - QR kod: `qr.png` (baskı için) ve `qr.svg` (vektörel)
 
 ## Yayınlama (GitHub Pages)
