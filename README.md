@@ -1,6 +1,6 @@
 # Linkler
 
-ETÜ Robotik ve Gömülü Yazılım Topluluğu (ROGOYATO) bağlantı sayfası.
+TOBB ETÜ Robotik ve Gömülü Yazılım Topluluğu (ROGOYATO) bağlantı sayfası.
 
 Sayfa sitede hiçbir menü/butondan erişilebilir değildir ve arama motorlarına
 kapalıdır (`noindex`). Yalnızca QR kod ile paylaşılır.
